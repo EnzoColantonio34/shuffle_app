@@ -2,7 +2,7 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: 'transparent',
+    backgroundColor: '#FF1B30',
     padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
@@ -12,9 +12,9 @@ const styles = StyleSheet.create({
     borderBlockColor: 'transparent',
   },
   title: {
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 'bold',
-    color: 'black',
+    color: 'white',
   },
 });
 
