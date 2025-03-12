@@ -4,15 +4,10 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    padding: 10,
-    paddingBottom: 70,
+    alignItems: 'center',
+    height: 60,
+    marginBottom: 35,
     backgroundColor: '#fff',
-    borderTopWidth: 1,
-    borderTopColor: '#ccc',
-  },
-  text: {
-    fontSize: 16,
-    color: '#007AFF',
   },
 });
 

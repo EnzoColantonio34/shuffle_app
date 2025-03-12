@@ -2,18 +2,19 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: '#f8f8f8',
+    backgroundColor: 'transparent',
     padding: 20,
     alignItems: 'center',
     justifyContent: 'center',
-    marginTop: 40,
+    height: 120,
+    paddingTop: 60,
     borderBottomWidth: 1,
-    borderBottomColor: '#ddd',
+    borderBlockColor: 'transparent',
   },
   title: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#333',
+    color: 'black',
   },
 });
 

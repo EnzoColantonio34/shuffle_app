@@ -1,6 +1,7 @@
 import React from 'react';
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
+import { IconButton } from 'react-native-paper';
 import styles from '../styles/navbarstyle';
 
 const NavbarComponent = () => {
@@ -8,21 +9,31 @@ const NavbarComponent = () => {
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-        <Text style={styles.text}>Home</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <Text style={styles.text}>Likes</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Recherche')}>
-        <Text style={styles.text}>Recherche</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Annuaire')}>
-        <Text style={styles.text}>Annuaire</Text>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Messagerie')}>
-        <Text style={styles.text}>Messagerie</Text>
-      </TouchableOpacity>
+      <IconButton
+        icon="home"
+        size={24}
+        onPress={() => navigation.navigate('Home')}
+      />
+      <IconButton
+        icon="heart"
+        size={24}
+        onPress={() => navigation.navigate('Profile')}
+      />
+      <IconButton
+        icon="magnify"
+        size={24}
+        onPress={() => navigation.navigate('Recherche')}
+      />
+      <IconButton
+        icon="book"
+        size={24}
+        onPress={() => navigation.navigate('Annuaire')}
+      />
+      <IconButton
+        icon="message"
+        size={24}
+        onPress={() => navigation.navigate('Messagerie')}
+      />
     </View>
   );
 };
